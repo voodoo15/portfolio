@@ -51,6 +51,22 @@ aside {
   margin:  auto;
 }
 
+#skills_section {
+  display: table;
+}
+
+.skill {
+  display: block;
+  overflow:  hidden;
+  float: left;
+  width:  20%;
+  height: 150px;
+}
+
+.skill p {
+  text-align:  left;
+}
+
 main {
     overflow: hidden;
     width: 75%;
@@ -70,7 +86,8 @@ nav a {
 }
 
 skills_section {
-  display:  inline-block;
+  display:  block;
+  margin: auto;
 }
 
 #image {

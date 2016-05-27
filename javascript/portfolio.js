@@ -47,7 +47,7 @@ $(document).on('ready page:load', function() {
     return [];
   };
 
-  // Back to top functionality
+  // Back to top functionality from http://html-tuts.com/back-to-top-button-jquery/
 
   var amountScrolled = 300;
 

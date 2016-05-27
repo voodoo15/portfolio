@@ -59,7 +59,7 @@ aside {
 }
 
 .links a:hover {
-  color:  red;
+  color:  #6897bb;
 }
 
 #skills_section {
@@ -94,10 +94,28 @@ main {
     margin: auto;
 }
 
-nav a {
-    display:  block;
+aside {
+  background-color:  light-grey;
+  height:  100%;
+}
+
+aside a {
+    display:  inline;
     margin:  auto;
 }
+
+aside a:link {
+  color:  grey;
+}
+
+aside a:visited {
+  color:  grey;
+}
+
+aside a:hover {
+  color:  #6897bb;
+}
+
 
 skills_section {
   display:  block;
@@ -117,11 +135,16 @@ skills_section {
     margin-bottom: 30px;
 }
 
+/*
+Back to top from:  http://html-tuts.com/back-to-top-button-jquery/
+*/
+
 a.back-to-top {
 	display: none;
 	width: 60px;
 	height: 60px;
 	position: fixed;
+  background: #6897bb url("../img/cd-top-arrow.svg") no-repeat center 43%;
 	z-index: 1;
 	right: 40px;
 	bottom: 40px;

@@ -1,3 +1,5 @@
+// Borrowed code for smooth scroll from site:
+// http://www.learningjquery.com/2007/10/improved-animated-scrolling-script-for-same-page-links
 $(document).on('ready page:load', function() {
   function filterPath(string) {
   return string

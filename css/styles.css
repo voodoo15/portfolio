@@ -1,78 +1,87 @@
-*,
-*:before,
-*:after {
-    box-sizing:  border-box;
-    font-family:  Lato, Arial, sans-serif;
-    font-weight:  300;
-    margin: 10px;
-    padding:  0;
+*, *:before, *:after {
+    box-sizing: border-box;
+    font-family: Lato, FontAwesome, Arial, sans-serif;
+    font-weight: 300;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
 }
 
 body {
-  font-size: 100%;
-  line-height: 1.5;
-  margin: 0;
+    line-height: 1.5;
+    margin: 0;
+    font-size: 1em;
 }
 
 h1 {
-  font-weight:  900;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin:  5px 0;
+
 }
 
 h3 {
-  font-weight:  700;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin:  5px 0;
 }
 
 a {
-  text-decoration:  none;
+    text-decoration: none;
 }
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 aside {
-  overflow:  hidden;
-  width:  25%;
-  float:  left;
-  height:  auto;
-  z-index:  1;
-  position:  fixed;
-  padding:  10px;
+    overflow: hidden;
+    width: 25%;
+    float: left;
+    height: auto;
+    z-index: 1;
+    position: fixed;
+    padding: 10px;
+}
+
+.links {
+  display:  inline-block;
+  margin:  auto;
 }
 
 main {
-  overflow:  hidden;
-  width:  75%;
-  float:  right;
-  padding:  10px;
+    overflow: hidden;
+    width: 75%;
+    float: right;
+    padding: 10px 0;
 }
 
 #name, #title {
-  padding:  0;
-  display:  block;
-  margin:  auto;
+    padding: 0;
+    display: block;
+    margin: auto;
 }
 
-/*#name_title {
-  display:  block;
-  margin:  auto;
-  padding:  0px;
-}*/
-
 nav a {
-  display:  block;
-  margin: auto;
+    display:  block;
+    margin:  auto;
+}
+
+skills_section {
+  display:  inline-block;
 }
 
 #image {
-  display:  block;
-  margin:  auto;
-  height:  auto;
-  width:  auto;
-  max-height:  120px;
-  max-width:  120px;
-  background-color: white;
-  border-radius: 50%;
-  border: 2px solid black;
-  margin-bottom: 30px;
+    display: block;
+    margin: auto;
+    height: auto;
+    width: auto;
+    max-height: 120px;
+    max-width: 120px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin-bottom: 30px;
 }

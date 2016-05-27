@@ -20,6 +20,33 @@
   }
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin:  5px 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin:  5px 0;
+}
+
+header {
+  text-align:  center;
+  display:  block;
+  padding:  80px 0;
+  margin:  auto;
+  background-color: grey;
+}
+
+section {
+  text-align:  center;
+  display:  block;
+  padding:  80px 0;
+  margin:  auto;
+}
+
 html {
     font-size: 16px;
 }
@@ -30,55 +57,37 @@ body {
     font-size: 1em;
 }
 
-h1 {
-    font-weight: 900;
-    font-size: 1.5em;
-    margin:  5px 0;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1.2em;
-    margin:  5px 0;
-}
 
 a {
     text-decoration: none;
+    padding: 0;
 }
 
 ul {
     list-style-type: none;
 }
 
-aside {
-    overflow: hidden;
-    width: 25%;
-    float: left;
-    height: auto;
-    z-index: 1;
-    position: fixed;
-    padding: 10px;
+.social {
+  display:  block;
+  margin:  0;
+  padding:  0;
+  position:  fixed;
+  top:  100px;
+  width:  50px;
+  z-index:  0;
+  right:  0px;
 }
 
-.links {
-  display:  inline-block;
-  margin:  auto;
-}
-
-.links a:link {
+.social a:link {
   color:  grey;
 }
 
-.links a:visited {
+.social a:visited {
   color:  grey;
 }
 
-.links a:hover {
-  color:  green;
-}
-
-#skills_section {
-  /*display: table;*/
+.social a:hover {
+  color:  red;
 }
 
 .skill {
@@ -96,9 +105,9 @@ aside {
 }
 
 main {
-    overflow: hidden;
-    width: 75%;
-    float: right;
+    /*overflow: hidden;*/
+    width: 100%;
+    /*float: right;*/
     padding: 10px 0;
 }
 
@@ -106,31 +115,52 @@ main {
     padding: 0;
     display: block;
     margin: auto;
+    color: white;
 }
 
-aside {
-  height:  100%;
+nav {
+  overflow: hidden;
+  height: 45px;
+  padding: 0;
+  line-height: 40px;
+  padding: 0 10px;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  color:  grey;
+  border-bottom:  solid 1px grey;
+  background-color:  white;
 }
 
-aside a {
-    display:  inline;
-    margin:  auto;
-  }
+nav ul {
+  padding:  0;
+  margin:  0;
+}
 
-aside a:link {
+nav li {
+  display: inline-block;
+  padding:  0 10px;
+}
+
+nav a {
+  display:  inline;
+}
+
+nav a:link {
   color:  grey;
 }
 
-aside a:visited {
+nav a:visited {
   color:  grey;
 }
 
-aside a:hover {
+nav a:hover {
   color:  #6897bb;
 }
 
-skills_section {
-  display:  block;
+#skills_section {
+  display:  inline;
   margin: auto;
 }
 
@@ -143,7 +173,7 @@ skills_section {
     max-width: 120px;
     background-color: white;
     border-radius: 50%;
-    border: 2px solid black;
+    border: 2px solid white;
     margin-bottom: 30px;
 }
 

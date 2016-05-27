@@ -3,6 +3,21 @@
     font-family: Lato, FontAwesome, Arial, sans-serif;
     font-weight: 300;
     padding: 0;
+    color:  grey;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
 }
 
 html {
@@ -102,7 +117,7 @@ aside {
 aside a {
     display:  inline;
     margin:  auto;
-}
+  }
 
 aside a:link {
   color:  grey;
@@ -115,7 +130,6 @@ aside a:visited {
 aside a:hover {
   color:  #6897bb;
 }
-
 
 skills_section {
   display:  block;
@@ -148,4 +162,8 @@ a.back-to-top {
 	z-index: 1;
 	right: 40px;
 	bottom: 40px;
+}
+
+.pulse {
+animation-name: pulse;
 }

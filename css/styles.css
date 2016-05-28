@@ -93,7 +93,10 @@ nav a:hover {
   background-color: grey;
   height:  700px;
   position:  relative;
-  background-image: url("../img/toronto_streetcar.jpg");
+  background-image: url("../img/macbook-image.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 
@@ -294,7 +297,10 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("../img/toronto_streetcar.jpg");
+  background-image: url("../img/toronto_streetcar_bw.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   background-size: cover;
 }
 

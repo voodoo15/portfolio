@@ -56,6 +56,6 @@ $(document).on('ready page:load', function() {
   		$('a.back-to-top').fadeIn('slow');
   	} else {
   		$('a.back-to-top').fadeOut('slow');
-  	}
+  	};
   });
 });

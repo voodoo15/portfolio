@@ -35,6 +35,7 @@ section {
   display:  block;
   padding:  80px 0;
   margin:  0;
+  height:  auto;
 }
 
 .summary {
@@ -50,7 +51,7 @@ section {
   background-color: grey;
   height:  700px;
   position:  relative;
-  background-image: url("../img/toronto_streetcar_bw.jpg");
+  background-image: url("../img/toronto_streetcar.jpg");
   background-size: cover;
 }
 
@@ -62,6 +63,13 @@ section {
   margin-left: -130px;
 }
 
+#name, #title {
+  padding: 0;
+  display: block;
+  margin: auto;
+  color: white;
+}
+
 #image {
     margin: auto;
     max-height: 180px;
@@ -69,6 +77,30 @@ section {
     background-color: white;
     border-radius: 50%;
     border: 2px solid white;
+}
+
+#experience_section {
+  background-color: #808080;
+}
+
+#experience_section * {
+  color:  white;
+}
+
+#contact_section {
+  color:  white;
+  background-image: url("../img/toronto_streetcar_bw.jpg");
+  filter: brightness(10%);
+  background-size: cover;
+  width:  100%;
+  height:  650px;
+  padding:  0;
+  background-color:#000;
+  filter:contrast(2500%);
+}
+
+#contact_section * {
+  color:  white;
 }
 
 
@@ -122,9 +154,10 @@ ul {
 .social a:hover {
   color:  red;
 }
-#skills_section {
-  display:  inline;
-  margin: auto;
+#skill_section {
+  display:  inline-block;
+  padding:  100px;
+  color:  grey;
 }
 
 .skill {
@@ -132,21 +165,16 @@ ul {
   overflow:  hidden;
   float: left;
   width:  20%;
-  height: 150px;
-  padding:  0;
+  height: auto;
+  padding:  50px;
 }
 
 .skill p {
-  text-align:  left;
+  text-align:  center;
   padding:  0;
+  color:  grey;
 }
 
-#name, #title {
-    padding: 0;
-    display: block;
-    margin: auto;
-    color: #6897bb;
-}
 
 #profile_section {
   background-color:  #6897bb;

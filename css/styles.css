@@ -30,6 +30,18 @@ body {
   font-size: 1em;
 }
 
+section {
+  text-align:  center;
+  display:  block;
+  padding:  80px 0;
+  margin:  0;
+}
+
+.summary {
+  padding:  0 15%;
+  text-align: left;
+}
+
 #hero_section {
   text-align:  center;
   display:  block;
@@ -38,6 +50,8 @@ body {
   background-color: grey;
   height:  700px;
   position:  relative;
+  background-image: url("../img/toronto_streetcar_bw.jpg");
+  background-size: cover;
 }
 
 #hero_content {
@@ -57,17 +71,6 @@ body {
     border: 2px solid white;
 }
 
-section {
-  text-align:  center;
-  display:  block;
-  padding:  80px 0;
-  margin:  auto;
-}
-
-section > div ~ p {
-  padding:  0 15%;
-  text-align: left;
-}
 
 main {
   /*overflow: hidden;*/
@@ -142,7 +145,7 @@ ul {
     padding: 0;
     display: block;
     margin: auto;
-    color: white;
+    color: #6897bb;
 }
 
 #profile_section {
@@ -164,7 +167,6 @@ nav {
   padding: 0;
   line-height: 40px;
   padding: 0 10px;
-  margin: 0 auto;
   position: fixed;
   z-index: 2;
   width: 100%;
@@ -174,13 +176,15 @@ nav {
 }
 
 nav ul {
+  display:  block;
   padding:  0;
-  margin:  0;
+  margin:  auto;
 }
 
 nav li {
-  display: inline-block;
-  padding:  0 10px;
+  display: inline;
+  margin:  auto;
+  padding:  0 5px;
 }
 
 nav a {
@@ -197,6 +201,10 @@ nav a:visited {
 
 nav a:hover {
   color:  #6897bb;
+}
+
+.links {
+  margin:  auto;
 }
 
 /*

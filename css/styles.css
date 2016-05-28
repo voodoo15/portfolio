@@ -138,19 +138,26 @@ nav a:hover {
   height:  650px;
   padding:  0;
   background-color:#6897bb;
-  position:relative;
+  /*position:relative;*/
+  margin: 0;
 }
 
-.contact_content {
-  position:  absolute;
+.contact_content * {
+  /*position:  absolute;
   top:  40%;
-  margin: auto;
-  left:  35%;
+  left:  40%;
+  margin-top: -10%;
+  margin-left:  -10%;*/
+  margin:  auto;
+  display:  block;
+  vertical-align: middle;
+  padding:  0;
 }
 
 .contact_links a:link {
   color:  green;
   padding: 10px;
+  display:  inline;
 }
 
 #contact_section * {
@@ -197,8 +204,6 @@ ul {
   z-index:  0;
   /*right:  0px;*/
   right:  -50px;
-
-
 }
 
 .social a:link {

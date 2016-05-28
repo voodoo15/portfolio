@@ -43,7 +43,7 @@ section {
 }
 
 nav {
-  top:  -45px;
+  /*top:  -45px;*/
   overflow: hidden;
   height: 45px;
   padding: 0;
@@ -142,7 +142,7 @@ nav a:hover {
   position:  absolute;
   top:  40%;
   margin: auto;
-  right:  35%;
+  left:  35%;
 }
 
 .contact_links a:link {
@@ -152,11 +152,6 @@ nav a:hover {
 
 #contact_section * {
   color:  white;
-  /*position:absolute;
-  top:50%;
-  left:50%;
-  margin-top: -145px;
-  margin-left: -130px;*/
 }
 
 
@@ -197,7 +192,10 @@ ul {
   top:  100px;
   width:  50px;
   z-index:  0;
-  right:  0px;
+  /*right:  0px;*/
+  right:  -50px;
+
+
 }
 
 .social a:link {
@@ -267,6 +265,10 @@ a.back-to-top {
 .pulse {
 animation-name: pulse;
 }
+
+/*
+  Code referenced from simple parallax effect demo
+*/
 
 .parallax {
   height:  600px;

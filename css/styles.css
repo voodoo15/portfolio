@@ -3,7 +3,6 @@
     font-family: Lato, FontAwesome, Arial, sans-serif;
     font-weight: 300;
     padding: 0;
-    color:  grey;
 }
 
 @keyframes pulse {
@@ -41,6 +40,49 @@ section {
 .summary {
   padding:  0 15%;
   text-align: left;
+}
+
+nav {
+  top:  -45px;
+  overflow: hidden;
+  height: 45px;
+  padding: 0;
+  line-height: 40px;
+  padding: 0 10px;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  color:  grey;
+  border-bottom:  solid 1px grey;
+  background-color:  white;
+}
+
+nav ul {
+  display:  block;
+  padding:  0;
+  margin:  auto;
+}
+
+nav li {
+  display: inline;
+  margin:  auto;
+  padding:  0 5px;
+}
+
+nav a {
+  display:  inline;
+}
+
+nav a:link {
+  color:  grey;
+}
+
+nav a:visited {
+  color:  grey;
+}
+
+nav a:hover {
+  color:  #6897bb;
 }
 
 #hero_section {
@@ -92,10 +134,8 @@ section {
   width:  100%;
   height:  650px;
   padding:  0;
-  background-color:#000;
+  background-color:#808080;
   position:relative;
-  background-image: url("../img/toronto_streetcar_dark.jpg");
-  background-size: cover;
 }
 
 .contact_content {
@@ -105,8 +145,8 @@ section {
   right:  35%;
 }
 
-.contact_content a {
-  color:  white;
+.contact_links a:link {
+  color:  green;
   padding: 10px;
 }
 
@@ -125,6 +165,7 @@ main {
   width: 100%;
   /*float: right;*/
   padding: 0;
+  color:  grey;
 }
 
 h1 {
@@ -170,6 +211,7 @@ ul {
 .social a:hover {
   color:  red;
 }
+
 #skill_section {
   display:  inline-block;
   padding:  100px;
@@ -191,7 +233,6 @@ ul {
   color:  grey;
 }
 
-
 #profile_section {
   background-color:  #6897bb;
 }
@@ -202,49 +243,6 @@ ul {
 
 #profile_section > p {
   color:  white;
-}
-
-nav {
-  top:  -45px;
-  overflow: hidden;
-  height: 45px;
-  padding: 0;
-  line-height: 40px;
-  padding: 0 10px;
-  position: fixed;
-  z-index: 2;
-  width: 100%;
-  color:  grey;
-  border-bottom:  solid 1px grey;
-  background-color:  white;
-}
-
-nav ul {
-  display:  block;
-  padding:  0;
-  margin:  auto;
-}
-
-nav li {
-  display: inline;
-  margin:  auto;
-  padding:  0 5px;
-}
-
-nav a {
-  display:  inline;
-}
-
-nav a:link {
-  color:  grey;
-}
-
-nav a:visited {
-  color:  grey;
-}
-
-nav a:hover {
-  color:  #6897bb;
 }
 
 .links {
@@ -271,24 +269,46 @@ animation-name: pulse;
 }
 
 .parallax {
-  perspective: 1px;
-  height: 100vh;
-  overflow-x: hidden;
-  overflow-y: auto;
+  height:  600px;
 }
 
-.parallax__layer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 48px;
+  line-height: 600px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+section.module.parallax-1 {
+  background-image: url("../img/toronto_streetcar.jpg");
+  background-size: cover;
 }
 
-.parallax__layer--base {
-  transform: translateZ(0);
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
 }
-
-.parallax__layer--back {
-  transform: translateZ(-1px) scale(2);
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
 }

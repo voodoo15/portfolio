@@ -20,16 +20,14 @@
   }
 }
 
-h1 {
-  font-weight: 900;
-  font-size: 1.5em;
-  margin:  5px 0;
+html {
+  font-size: 16px;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 1.2em;
-  margin:  5px 0;
+body {
+  line-height: 1.5;
+  margin: 0;
+  font-size: 1em;
 }
 
 header {
@@ -47,16 +45,29 @@ section {
   margin:  auto;
 }
 
-html {
-    font-size: 16px;
+section > div ~ p {
+  padding:  0 15%;
+  text-align: left;
 }
 
-body {
-    line-height: 1.5;
-    margin: 0;
-    font-size: 1em;
+main {
+  /*overflow: hidden;*/
+  width: 100%;
+  /*float: right;*/
+  padding: 0;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 1.5em;
+  margin:  5px 0;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin:  5px 0;
+}
 
 a {
     text-decoration: none;
@@ -89,6 +100,10 @@ ul {
 .social a:hover {
   color:  red;
 }
+#skills_section {
+  display:  inline;
+  margin: auto;
+}
 
 .skill {
   display: block;
@@ -104,13 +119,6 @@ ul {
   padding:  0;
 }
 
-main {
-    /*overflow: hidden;*/
-    width: 100%;
-    /*float: right;*/
-    padding: 10px 0;
-}
-
 #name, #title {
     padding: 0;
     display: block;
@@ -118,7 +126,20 @@ main {
     color: white;
 }
 
+#profile_section {
+  background-color:  #6897bb;
+}
+
+#profile_section > h1 {
+  color:  white;
+}
+
+#profile_section > p {
+  color:  white;
+}
+
 nav {
+  top:  -45px;
   overflow: hidden;
   height: 45px;
   padding: 0;
@@ -157,11 +178,6 @@ nav a:visited {
 
 nav a:hover {
   color:  #6897bb;
-}
-
-#skills_section {
-  display:  inline;
-  margin: auto;
 }
 
 #image {
